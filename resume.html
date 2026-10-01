@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Résumé · Jonah Waltz-Rieber</title>
+<meta name="description" content="Résumé of Jonah Waltz-Rieber, computer engineer in Buffalo, NY.">
+<link rel="canonical" href="https://jonahs.site/resume.html">
+<meta name="theme-color" content="#07080b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14161b;--soft:#3d424c;--muted:#5f6571;--rule:#e3e0da;--accent:#d9581f;
+  --serif:"Instrument Serif",Georgia,serif;--sans:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Geist Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#07080b;color:var(--ink);font:400 9.6pt/1.38 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.bar{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:14px max(18px,calc(50% - 4.25in));background:rgba(7,8,11,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(236,232,225,.08);font:500 13px/1 var(--sans);color:#ece8e1}
+.bar nav{display:flex;gap:10px;flex-wrap:wrap}
+.bar a,.bar button{display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:999px;border:1px solid rgba(236,232,225,.2);background:none;color:#ece8e1;font:500 13px/1 var(--sans);cursor:pointer}
+.bar a.primary{background:#ece8e1;color:#07080b;border-color:#ece8e1}
+.page{width:8.5in;min-height:11in;margin:28px auto 60px;background:#fffdf9;padding:.44in .55in .4in;box-shadow:0 30px 80px -20px rgba(0,0,0,.7)}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;padding-bottom:10px;border-bottom:1.5px solid var(--ink)}
+h1{font:400 29pt/.95 var(--serif);letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--accent)}
+.title{font:500 7.8pt/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:7px}
+.contact{text-align:right;font:500 8.2pt/1.55 var(--mono);color:var(--soft)}
+.summary{margin:9px 0 0;color:var(--soft)}
+h2{display:flex;align-items:center;gap:10px;font:600 7.6pt/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:13px 0 6px}
+h2::after{content:"";flex:1;height:1px;background:var(--rule)}
+.item{margin-bottom:6px;break-inside:avoid}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.head b{font-weight:600;font-size:10pt}
+.head b span{font-weight:400;color:var(--soft)}
+.when{font:500 7.8pt/1 var(--mono);color:var(--muted);white-space:nowrap}
+.item li{position:relative;padding-left:12px;color:var(--soft);margin-top:2px}
+.item li::before{content:"";position:absolute;left:2px;top:.66em;width:4px;height:1px;background:var(--muted)}
+.compact{display:grid;grid-template-columns:1fr 1fr;gap:2px 26px;margin-top:2px}
+.compact div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;color:var(--soft)}
+.compact b{font-weight:600;color:var(--ink)}
+.skills{display:grid;grid-template-columns:104px 1fr;gap:2px 12px;color:var(--soft)}
+.skills dt{font:600 7.4pt/1.85 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink)}
+@media (max-width:8.9in){
+  .page{width:auto;min-height:0;margin:16px;padding:26px 22px}
+  header{flex-direction:column;align-items:flex-start}
+  .contact{text-align:left}
+  .head{flex-direction:column;gap:3px}
+  .compact{grid-template-columns:1fr}
+  .compact div{flex-direction:column;gap:2px}
+  .skills{grid-template-columns:1fr}
+  .skills dt{margin-top:6px}
+}
+@page{size:letter;margin:0}
+@media print{
+  body{background:#fff}
+  .bar{display:none}
+  .page{width:8.5in;min-height:0;margin:0;box-shadow:none;padding:.44in .55in .3in}
+  header{flex-direction:row;align-items:flex-end}
+  .contact{text-align:right}
+  .head{flex-direction:row}
+  .compact{grid-template-columns:1fr 1fr}
+  .compact div{flex-direction:row}
+  .skills{grid-template-columns:104px 1fr}
+  .skills dt{margin-top:0}
+}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a href="./">← jonahs.site</a>
+  <nav>
+    <button type="button" onclick="print()">Print</button>
+    <a class="primary" href="Jonah_Waltz-Rieber_Resume.pdf" download>Download PDF</a>
+  </nav>
+</div>
+
+<main class="page">
+  <header>
+    <div>
+      <h1>Jonah <em>Waltz-Rieber</em></h1>
+      <p class="title">Computer engineer</p>
+    </div>
+    <div class="contact">
+      Buffalo, NY · <a href="mailto:jonahwr@verizon.net">jonahwr@verizon.net</a><br>
+      <a href="https://jonahs.site">jonahs.site</a> · <a href="https://github.com/CoderJonah">github.com/CoderJonah</a>
+    </div>
+  </header>
+
+  <p class="summary">I build smart contracts, full-stack web apps and the infrastructure under them. Founder and engineer of PulseChainGG, a live NFT marketplace and social platform on PulseChain, with a background in computer engineering at RIT, IT support and research programming.</p>
+
+  <h2>Projects</h2>
+  <div class="item">
+    <div class="head"><b>PulseChainGG <span>· Founder &amp; engineer · pulsechain.gg</span></b><span class="when">2023 – present</span></div>
+    <ul>
+      <li>Designed and built 35+ Solidity contracts: ERC-721 and ERC-1155 marketplaces, English auctions, blind-mint generative collections, groups, usernames and subscriptions.</li>
+      <li>Gasless onboarding through an EIP-2771 forwarder, EIP-712 signatures and session keys, so gift-link recipients can mint and trade before they hold any PLS.</li>
+      <li>Next.js and TypeScript app (wagmi, viem, RainbowKit), XMTP encrypted DMs, IPFS with Arweave archival through Irys, and a Ponder indexer.</li>
+      <li>Tested with Slither, Echidna, Hardhat, Foundry and Puppeteer. An audit pass found and fixed 5 bugs (1 critical, 4 high) before launch.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="head"><b>Gr8hair <span>· Full-stack web app · gr8hair.vercel.app</span></b><span class="when">2026</span></div>
+    <ul>
+      <li>Multi-tenant salon platform on Next.js 14, Prisma, Postgres (Neon) and Auth.js, with owner, artist and client roles.</li>
+      <li>8-step booking flow that charges through each stylist's own Square account; HMAC-verified, idempotent webhooks; daily NYS license checks.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="head"><b>Reaction time &amp; peripheral vision study <span>· STAT-325 Design of Experiments</span></b><span class="when">2026</span></div>
+    <ul><li>2×2 within-subject factorial design. A C++ harness reads clicks from Linux evdev at a locked 240 Hz; analysis in R.</li></ul>
+  </div>
+  <div class="item">
+    <div class="head"><b>DocVR <span>· BrickHack 7 winner, Best COVID-19 Hack</span></b><span class="when">2021</span></div>
+    <ul><li>VR doctor's office in Unity XR with a Dialogflow virtual doctor, backed by CockroachDB and Flask. Team of four.</li></ul>
+  </div>
+
+  <h2>Experience</h2>
+  <div class="item">
+    <div class="head"><b>Service Desk Analyst <span>· PCI · Remote</span></b><span class="when">Oct 2023 – Jan 2024</span></div>
+    <ul><li>Resolved client tickets from password resets to software management with Datto RMM. Passed Kaseya Certified Technician training.</li></ul>
+  </div>
+  <div class="item">
+    <div class="head"><b>Co-op Student / Research Apprentice <span>· Roswell Park Comprehensive Cancer Center</span></b><span class="when">Jan 2018 – Jan 2019</span></div>
+    <ul><li>Programming support for the Women's Circle of Health Study, mentored by Chi-Chen Hong, PhD.</li></ul>
+  </div>
+  <div class="compact">
+    <div><span><b>AutoZone</b> · Buffalo, NY</span><span class="when">Dec 2025 – present</span></div>
+    <div><span><b>La Nova Pizzeria</b> · food preparer</span><span class="when">Mar – Jul 2025</span></div>
+    <div><span><b>Uber &amp; Lyft</b> · driver, rated 4.98 / 4.99</span><span class="when">2017 – 2023</span></div>
+    <div><span><b>Walmart</b> · promoted to sporting goods</span><span class="when">2016 – 2017</span></div>
+    <div><span><b>William &amp; Jefferson Inc.</b> · Hamburg, NY</span><span class="when">2013 – 2016</span></div>
+  </div>
+
+  <h2>Education</h2>
+  <div class="item">
+    <div class="head"><b>Rochester Institute of Technology <span>· Kate Gleason College of Engineering</span></b><span class="when">B.S. in progress</span></div>
+    <ul>
+      <li>Computer Engineering, immersion in Applied Statistics. Courses include Digital System Design I &amp; II, Computer Architecture, Computer Organization, Assembly Language, Circuits I &amp; II, Electronics I, Data &amp; Communications, Probability &amp; Statistics, Design of Experiments and CS I &amp; II.</li>
+      <li>Team lead, Solar Radio Telescope (Multidisciplinary Senior Design, 2021). Nominated for the RIT Computing Medal.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="head"><b>Frontier Central High School <span>· Regents Diploma with Advanced Designation and Honors</span></b><span class="when">2014</span></div>
+  </div>
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>Solidity, TypeScript, JavaScript, Python, C, C++, C#, R, SQL, Lua, assembly</dd>
+    <dt>Web</dt><dd>Next.js, React, Node.js, Tailwind, Prisma, PostgreSQL, Auth.js, REST, webhooks, Netlify, Vercel</dd>
+    <dt>Web3</dt><dd>Hardhat, Foundry, OpenZeppelin, ethers, viem, wagmi, IPFS, Arweave/Irys, XMTP, Ponder</dd>
+    <dt>Systems &amp; IT</dt><dd>Linux, Windows XP–11, Docker, WSL, VMs, Git, Datto RMM, Kaseya, llama.cpp on CUDA</dd>
+    <dt>XR &amp; hardware</dt><dd>Unity (10 years), Unity XR, SolidWorks, Marlin firmware, digital logic</dd>
+  </dl>
+</main>
+</body>
+</html>

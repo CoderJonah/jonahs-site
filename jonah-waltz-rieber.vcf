@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Waltz-Rieber;Jonah;;;
+FN:Jonah Waltz-Rieber
+TITLE:Computer engineer
+EMAIL;TYPE=INTERNET,PREF:jonahwr@verizon.net
+URL;TYPE=WORK:https://jonahs.site
+URL:https://github.com/CoderJonah
+ADR;TYPE=HOME:;;;Buffalo;NY;;USA
+NOTE:Smart contracts, full-stack web apps and systems. Founder and engineer of PulseChainGG.
+END:VCARD
